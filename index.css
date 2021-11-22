@@ -4,6 +4,12 @@ body {
   font-family: "Merriweather", sans-serif !important;
 }
 
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
 .card img {
   object-fit: cover;
   height: 100%;
@@ -14,7 +20,7 @@ body {
 }
 
 .culture-img {
-  height: 300px;
+  height: 240px;
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -30,4 +36,16 @@ body {
 
 .sr-only{
   color:black;
+}
+
+.carousel-item{
+  padding-bottom: 5%;
+  padding-top: 5%;
+  text-align: center;
+  width: 60%;
+}
+.carousel-item * {
+  left: 33%;
+  position:relative;
+  width: auto;
 }
