@@ -12,3 +12,22 @@ body {
 .card-text {
   font-size: 0.9rem;
 }
+
+.culture-img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+
+.service-card img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sr-only{
+  color:black;
+}
