@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+body {
+  font-family: "Merriweather", sans-serif !important;
+}
+
+.card img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
