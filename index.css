@@ -1,15 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
+/* Elements on all pages */
 body {
   font-family: "Merriweather", sans-serif !important;
 }
 
 .navbar {
+  border-bottom: 1px solid black;
   position: sticky;
   top: 0;
   z-index: 1;
 }
+.nav-link.active {
+  color: #E26E6E !important;
+  font-weight: bold;
+}
 
+.hero { /* essentially just any section needing a blue background */
+  background-color: #add9ff;
+}
+
+/* Homepage Cards and Images */
 .card img {
   object-fit: cover;
   height: 100%;
@@ -38,6 +49,7 @@ body {
   color:black;
 }
 
+/* Homepage Carousel */
 .carousel-item{
   padding-bottom: 5%;
   padding-top: 5%;
@@ -45,7 +57,103 @@ body {
   width: 60%;
 }
 .carousel-item * {
+  position: relative;
   left: 33%;
-  position:relative;
+  margin: auto;
+}
+
+/* Events and Contact Us Google iframes */
+#calendar {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  margin: auto;
+  width: 70%;
+}
+@media (max-width: 992px) {
+  #calendar {width: 100%;}
+}
+#calendar * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#map {
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 56.25%;
+}
+#map * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Contact Us Cards and Images */
+.contact-card {
+  max-width: 300px;
+}
+.contact-card img {
+  height: 250px;
+  width: 100%;
+  padding: 5% 0;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 576px) {
+  height: none;
   width: auto;
+  max-width: 400px;
+}
+
+.contact-card .list-group {
+  font-size: 75%;
+}
+
+/* Contact Us Font Spacings */
+.basic-contact {
+  margin: auto 3%;
+}
+.basic-contact p {
+  line-height: 80%;
+}
+
+.board-directors * {
+  line-height: 80%;
+}
+
+/* Support Us Images */
+.support-us img {
+  display: block;
+  margin: auto;
+}
+.support-us img { width: 50%; }
+@media (min-width: 576px){
+  .support-us img { width: 100%; }
+}
+@media (min-width: 992px){
+  .support-us img { width: 80%; }
+}
+
+.rowbuff{
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.threeimgBuff{
+  margin-bottom: 1.5em;
 }

@@ -5,23 +5,24 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peoples Oakland</title>
+  <link rel="icon" href="images/cropped-PO.Logo_.RED_.jpg">
 
-	<!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
-	<link href="./index.css" rel="stylesheet" />
+	<!-- Bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-	<title>Peoples Oakland</title>
+  <!-- Other JS/Stylesheets -->
+  <link href="./index.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
 <body>
-
   <!-- Navigation Bar -->
-	<nav class="navbar navbar-expand-md navbar-light bg-light">
+	<nav class="navbar navbar-expand-md navbar-light bg-white">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">
-        <img src="images/Peoples Oakland Logo.png"
-        width=150 style="border: 1px solid black;"/>
+			<a class="navbar-brand" href="index.html">
+        <img src="images/Peoples Oakland Logo.png" width=100/>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -45,12 +46,36 @@
             </li>
           </ul>
           <button type="button" class="btn btn-outline-danger px-3">Donate</button>
+          <a href="https://www.facebook.com/peoplesoakland/" target="_blank">
+            <img src="images/facebook-logo.png" height=35px/>
+          </a>
+          <button type="submit" style="border:1px solid black; background:none">
+            <img src="images/search-icon.png" height=35px>
+          </button>
         </div>
       </div>
   </nav>
 
-  <div id="hero">
-    <img src="./images/hero-cover.png" class="h-100 w-100" />
+  <!-- Hero -->
+  <div id="hero" class="" style="background-color: #add9ff">
+    <div class="row row-cols-1 row-cols-md-2 container mx-auto py-0 py-md-4">
+      <div class="col-sm-6 py-5 my-auto">
+        <h1 class="display-5 fw-bold">Creating a culture of <span class="text-danger">love</span>.</h1>
+        <p>Peoples Oakland strives to be a premier recovery and wellness center, and is committed to holistic, comprehensive, member driven recovery.</p>
+        <div class="d-flex gap-4 text-danger fst-italic fw-bold">
+          <p>Hope</p>
+          <p>Integrity</p>
+          <p>Respect</p>
+          <p>Empathy</p>
+          <p>Humility</p>
+        </div>
+        <a href="#" class="btn btn-danger btn-lg fs-6 mt-2">Learn More</a>
+      </div>
+      <!-- <div class="col"> -->
+      <div class="col-sm-6 ms-auto">
+        <img src="images/conversation.svg" class="w-100 h-100 p-2" />
+      </div>
+    </div>
   </div>
 
   <div id="event-banner" class="alert alert-danger text-center" role="alert">
@@ -61,20 +86,20 @@
 
   <!-- Introduction to Peoples Oakland -->
   <div id="first" class="px-4 py-4 my-3 text-center">
-    <h2 class="fs-2 fw-bold">Creating a Culture of Love</h1>
+    <h2 class="fs-2 fw-bold">Premier recovery and wellness center</h1>
     <div class="col-lg-6 mx-auto">
     <p class="h6 mb-4">Recovery based on real life experiences nurtured by peer support, hope, self-help and collaborative relationships with professionals.</p>
     </div>
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 container-md m-auto">
-      <div class="col">
+      <div class="col threeimgBuff">
           <img src="images/topleft.png" class="culture-img" alt="">
       </div>
-      <div class="col">
+      <div class="col threeimgBuff">
           <img src="images/Women's Group Lunch Outing 2018.jpg" class="culture-img" alt="">
       </div>
-      <div class="col">
-          <img src="images/Zoo Trip.png" class="culture-img" alt="">
+      <div class="col threeimgBuff">
+          <img src="images/trip.png" class="culture-img" alt="">
       </div>
     </div>
   </div>
@@ -84,6 +109,8 @@
     <h2 class="fs-2 fw-bold text-center">Our Services</h1>
     
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 container-md m-auto">
+      
+      
       <div class="col">
         <div class="card service-card">
           <img src="https://images.unsplash.com/photo-1573495804664-b1c0849525af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80" class="card-img-top" alt="counseling-theraputic-support">
@@ -96,17 +123,19 @@
             </button>
             <!-- Modal -->
             <div class="modal fade" id="counseling-modal" tabindex="-1" aria-labelledby="counseling-modalLabel" aria-hidden="true">
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="counseling-modalLabel">Counseling & Theraputic Support</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body">
-                    Peoples Oakland is a premier recovery and wellness center for people living with serious, persistent mental illness and co-occurring disorders. Recovery programs are holistic, comprehensive, and member driven. To support innovative approaches to mental health the center includes a multipurpose social and drop-in area, a commercial kitchen, a fitness center, meeting rooms, a secure outside deck and a resource and computer center. All members have an individual counselor and develop a recovery plan based on their goals as they define them.
-                    <br />
-                    <br />
-                    Programs include nutrition and fitness, employment and education, peer support, social and recreational activities in the center and in the community. Fun and social connectedness is very important.
+                  <div class="modal-body row">
+                    <div class="col-lg-4">
+                      <img src="https://images.unsplash.com/photo-1573495804664-b1c0849525af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80" class="card-img-top" alt="counseling-theraputic-support">
+                    </div>
+                    <div class="col-lg-8">
+                    Peoples Oakland is a premier recovery and wellness center for people living with serious, persistent mental illness and co-occurring disorders. Recovery programs are holistic, comprehensive, and member driven. To support innovative approaches to mental health the center includes a multipurpose social and drop-in area, a commercial kitchen, a fitness center, meeting rooms,a secure outside deck and a resource and computer center. All members have an individual counselor and develop a recovery plan based on their goals as they define them.
+                    </div>
                   </div>
                 </div>
               </div>
@@ -114,6 +143,8 @@
           </div>
         </div>
       </div>
+
+
       <div class="col">
         <div class="card service-card">
           <img src="images/cooking.jpg" class="card-img-top" alt="counseling-theraputic-support">
@@ -126,19 +157,22 @@
             </button>
             <!-- Modal -->
             <div class="modal fade" id="employment-modal" tabindex="-1" aria-labelledby="employment-modalLabel" aria-hidden="true">
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="employment-modalLabel">Employment Services</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body">
-                    Peoples Oakland offers a wide range of employment services and education supports. Supports and opportunities are tailored to each member’s strength and interests. Member’s interest range from entering the work force to pursuing their education by attending local training centers and universities. Services offered include: individual career counseling; on the job training opportunities in reception, clerical support, housekeeping; job skills classes; job research assistance; job coaching and support; educational supports and individual computer accounts with internet access.
-
+                  <div class="modal-body row">
+                    <div class="col-lg-4">
+                      <img src="images/cooking.jpg" class="card-img-top" alt="counseling-theraputic-support">
+                    </div>
+                    <div class="col-lg-8">
+                    Peoples Oakland offers a wide range of employment services and education supports. Supports and opportunities are tailored to each member’s strength and interests. Member’s interest range from entering the work force to pursuing their education by attending local training centers and universities. Services offered include: individual career counseling; on the job training opportunities in reception, clerical support, housekeeping; job skills classes;job research assistance; job coaching and support; educational supports and individual computer accounts with internet access.
                     <br />
                     <br />
-
                     Peoples Oakland is committed to assisting individuals with mental illness to find and keep employment in the community. The Employment Assistance Program (EAP) at Peoples Oakland emphasizes helping them obtain competitive work in the community and providing the supports necessary to ensure their success in the workplace. We have staff that can help you with all phases of employment. Services are customized to the needs and desires of the individuals served. These services may include: benefits counseling, career counseling, resume development, interview practice, job development, placement and assistance in keeping a job. Staff is also available to assist you with information and support in your training and/or educational pursuits.
+                    </div>
                   </div>
                 </div>
               </div>
@@ -146,6 +180,8 @@
           </div>
         </div>
       </div>
+
+
       <div class="col">
         <div class="card service-card">
           <img src="images/Members 2 (Drop-In).JPG" class="card-img-top" alt="counseling-theraputic-support">
@@ -158,14 +194,19 @@
             </button>
             <!-- Modal -->
             <div class="modal fade" id="peer-modal" tabindex="-1" aria-labelledby="peer-modalLabel" aria-hidden="true">
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="peer-modalLabel">Peer Mentorship</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body">
-                   Peoples Oakland has always been a leader in self-help and peer support models. Opportunities are available for members to develop, lead and participate in activities and groups; work as a peer counselor; participate in community consumer activities such as CSP and PSAN; attend conferences and workshop. In addition, informal social relationships with peers allow unlimited opportunities to both provide and receive support.
+                  <div class="modal-body row">
+                    <div class="col-lg-4">
+                      <img src="images/Members 2 (Drop-In).JPG" class="card-img-top" alt="counseling-theraputic-support">
+                    </div>
+                    <div class="col-lg-8">
+                    Peoples Oakland has always been a leader in self-help and peer support models. Opportunities are available for members to develop, lead and participate in activities and groups; work as a peer counselor; participate in community consumer activities such as CSP and PSAN; attend conferences and workshop. In addition, informal social relationships with peers allow unlimited opportunities to both provide and receive support.
+                    </div>
                   </div>
                 </div>
               </div>
@@ -173,11 +214,13 @@
           </div>
         </div>
       </div>
+
+
       <div class="col">
         <div class="card service-card">
           <img src="images/Lake Erie Trip 1 (Outing).jpg" class="card-img-top" alt="counseling-theraputic-support">
           <div class="card-body">
-            <h5 class="card-title">Social & Recreation Services</h5>
+            <h5 class="card-title">Social & Rehabilitation Services</h5>
             <p class="card-text">Provide opportunities to meet and make friends and to participate in fun events.</p>
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#social-modal">
@@ -185,17 +228,22 @@
             </button>
             <!-- Modal -->
             <div class="modal fade" id="social-modal" tabindex="-1" aria-labelledby="social-modalLabel" aria-hidden="true">
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="social-modalLabel">Social & Recreation Services</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body">
-                  Social and Rehabilitation activities provide opportunities to meet and make friends and to participate in fun events at Peoples Oakland and in the community. Activities are continually evolving to meet the interests of the membership.
-                  <br />
-                  <br />
-                  Events range from parties, cook-outs and playing pool to day outings and overnight vacations. There is an all season sports program with competition against other agencies in basketball, softball and volleyball.
+                  <div class="modal-body row">
+                    <div class="col-lg-4">
+                      <img src="images/Lake Erie Trip 1 (Outing).jpg" class="card-img-top" alt="counseling-theraputic-support">
+                    </div>
+                    <div class="col-lg-8">
+                    Social and Rehabilitation activities provide opportunities to meet and make friends and to participate in fun events at Peoples Oakland and in the community. Activities are continually evolving to meet the interests of the membership.
+                    <br />
+                    <br />
+                    Events range from parties, cook-outs and playing pool to day outings and overnight vacations. There is an all season sports program with competition against other agencies in basketball, softball and volleyball.
+                    </div>
                   </div>
                 </div>
               </div>
@@ -203,6 +251,8 @@
           </div>
         </div>
       </div>
+
+
       <div class="col">
         <div class="card service-card">
           <img src="images/Fitness Center 2.JPG" class="card-img-top" alt="counseling-theraputic-support">
@@ -215,17 +265,22 @@
             </button>
             <!-- Modal -->
             <div class="modal fade" id="nutrition-modal" tabindex="-1" aria-labelledby="nutrition-modalLabel" aria-hidden="true">
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="nutrition-modalLabel">Nutrition & Fitness Services</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body">
-                  Wellness and Fitness Activities assist members in understanding and applying a holistic approach to creating and maintaining a healthy lifestyle. A wide range of activities are available. Members work with staff to develop and follow their individualized wellness recovery plans.
-                  <br />
-                  <br />
-                  In the fitness center members use aerobic and weight training equipment and participate in classes such as yoga, walking groups, weight management and smoking cessation. Nutritional education is incorporated through the healthy foods offered at the Snack Shack and every event, celebration and function. Nutritional health is also a focus in the diabetes education class and weight management class.
+                  <div class="modal-body row">
+                    <div class="col-lg-4">
+                      <img src="images/Fitness Center 2.JPG" class="card-img-top" alt="counseling-theraputic-support">
+                    </div>
+                    <div class="col-lg-8">
+                    Wellness and Fitness Activities assist members in understanding and applying a holistic approach to creating and maintaining a healthy lifestyle. A wide range of activities are available. Members work with staff to develop and follow their individualized wellness recovery plans.
+                    <br />
+                    <br />
+                    In the fitness center members use aerobic and weight training equipment and participate in classes such as yoga, walking groups, weight management and smoking cessation. Nutritional education is incorporated through the healthy foods offered at the Snack Shack and every event, celebration and function. Nutritional health is also a focus in the diabetes education class and weight management class.
+                    </div>
                   </div>
                 </div>
               </div>
@@ -233,26 +288,33 @@
           </div>
         </div>
       </div>
+
+
       <div class="col">
         <div class="card service-card">
           <img src="images/gateway clipper.jpg" class="card-img-top" alt="counseling-theraputic-support">
           <div class="card-body">
-            <h5 class="card-title">Peoples Oakland Reentry Program</h5>
-            <p class="card-text">We address the needs of individuals suffering from severe mental illness that are being released from the Allegheny County Jail.</p>
+            <h5 class="card-title">Reentry Program</h5>
+            <p class="card-text">We help individuals suffering from severe mental illness who are being released from the Allegheny County Jail.</p>
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#reentry-modal">
              Learn More
             </button>
             <!-- Modal -->
             <div class="modal fade" id="reentry-modal" tabindex="-1" aria-labelledby="reentry-modalLabel" aria-hidden="true">
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="reentry-modalLabel">Peoples Oakland Reentry Program</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body">
-                    The Peoples Oakland Reentry program is an expansion of our services that addresses the needs of individuals suffering from severe mental illness that are being released from the Allegheny County Jail. We will assist these individuals in obtaining appropriate treatment, while providing community support and therapeutic support. For individuals who have recently experienced incarceration, this provides them with a new community and social outlet. By changing their social environment, they are more likely to establish healthy daily rhythms, and will be surrounded by other members who are committed to working towards their own recovery goals
+                  <div class="modal-body row">
+                    <div class="col-lg-4">
+                      <img src="images/gateway clipper.jpg" class="card-img-top" alt="counseling-theraputic-support">
+                    </div>
+                    <div class="col-lg-8">
+                      The Peoples Oakland Reentry program is an expansion of our services that addresses the needs of individuals suffering from severe mental illness that are being released from the Allegheny County Jail. We will assist these individuals in obtaining appropriate treatment, while providing community support and therapeutic support. For individuals who have recently experienced incarceration, this provides them with a new community and social outlet. By changing their social environment, they are more likely to establish healthy daily rhythms, and will be surrounded by other members who are committed to working towards their own recovery goals.
+                    </div>
                   </div>
                 </div>
               </div>
@@ -265,19 +327,23 @@
     </div>
   </div>
 
+  <!-- Testimonials / Quotes -->
   <div id="testimonials" class="px-4 py-4 my-3">
     <h2 class="fs-2 fw-bold text-center">What Others are Saying</h1>
 
-    <div id="demo" class="carousel slide container alert-danger" data-bs-ride="carousel" style="display:block">
+    <div id="demo" class="carousel slide container alert-danger mt-4" data-bs-ride="carousel" style="display:block">
 
-    <!-- Indicators/dots -->
+    <!-- Carousel Indicators/dots -->
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
       <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
       <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
     </div>
     
-    <!-- The slideshow/carousel -->
+    <!-- Carousel -->
     <div class="carousel-inner">
       <div class="carousel-item active">
         <h5>Alice</h5>
@@ -291,12 +357,28 @@
       </div>
       
       <div class="carousel-item">
-        <h5>Kaitlyn</h5>
-        <p>"I really had very little confidence in myself. I did not see myself as worthy of being alive, worthy enough to be here. Now my biggest saying to myself is “you are enough.” I am valuable enough to this world to be a part of it. If I wasn’t, God wouldn’t have put me here."</p>
+        <h5>Annie</h5>
+        <p>"There’s no place quite like Peoples Oakland! As a social work intern, I felt lucky to be welcomed into their family and meet so many caring people. Within the 4 floors of Peoples, you can find anything you would want from a community mental health center. It’s amazing how much is accomplished by the wonderful staff and the ultra-dedicated and helpful members, when you look at it."</p>
       </div>
+
+      <div class="carousel-item">
+        <h5>Susan</h5>
+        <p>"I cannot emphasize enough the importance of this Program to Joy's life. She absolutely loved going each day she could and cried when she had to stay home. Joy was very fortunate to live with a loving and supportive host family. Lena Lawson, and her family provided a family for Joy who had lost both her parents in her twenties. But People's Oakland was really Joy's friend and activity support."</p>
+      </div>
+
+      <div class="carousel-item">
+        <h5>Darelle</h5>
+        <p>"Peoples Oakland was my first experience as a social worker and I am so thankful that it was. Both star and members alike helped me build a strong foundation as an intern that I have ben able to apply in everything that I’ve done since leaving. Every time I stepped into the building I learned something new."</p>
+      </div>
+
+      <div class="carousel-item">
+        <h5>Annie</h5>
+        <p>"There’s no place quite like Peoples Oakland! As a social work intern, I felt lucky to be welcomed into their family and meet so many caring people. Within the 4 floors of Peoples, you can find anything you would want from a community mental health center. It’s amazing how much is accomplished by the wonderful staff and the ultra-dedicated and helpful members, when you look at it."</p>
+      </div>
+      
     
+      <!-- Left and right controls/icons -->
       </div>
-        <!-- Left and right controls/icons -->
         <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
           <span class="carousel-control-prev-icon"></span>
         </button>
@@ -315,18 +397,17 @@
       <p class="h6 mb-4">We welcome all adults in the Pittsburgh area who suffer from or are recovering from mental illnesses. If you are interested in becoming a member, please click the button and follow the steps listed.</p>
     </div>
     <button type="button" class="btn btn-danger px-5 py-3">Get Started</button>
-
   </div>
 
   <!-- Footer -->
   <div id="footer">
-    <footer class="py-4 mt-5 border-top bg-light">
+    <footer class="py-4 border-top bg-light">
       <div class="row row-cols-1 row-cols-md-3 container mx-auto">
         <div class="col">
           <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
             <img width=100 style="border: 1px solid black;" src="images/Peoples Oakland Logo.png">
           </a>
-          <p class="text-muted">&copy; 2021</p>
+          <p class="text-muted">&copy; 2021 Peoples Oakland</p>
         </div>
 
         <div class="col">
