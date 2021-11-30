@@ -16,6 +16,12 @@ body {
   font-weight: bold;
 }
 
+#search-input {
+  display: none;
+  font-size: 75%;
+  max-width: 250px;
+}
+
 .hero { /* essentially just any section needing a blue background */
   background-color: #add9ff;
 }
@@ -31,11 +37,11 @@ body {
 }
 
 .culture-img {
+  border-radius: 5px;
   height: 240px;
   width: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 5px;
 }
 
 .service-card img {
@@ -60,6 +66,13 @@ body {
   position: relative;
   left: 33%;
   margin: auto;
+}
+
+/* About Us Community-based Goals */
+.community img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Events and Contact Us Google iframes */
@@ -156,4 +169,9 @@ body {
 
 .threeimgBuff{
   margin-bottom: 1.5em;
+}
+
+/* Resources Accordian */
+h2.accordion-header {
+  
 }
