@@ -5,7 +5,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Peoples Oakland</title>
+  <title>About - Peoples Oakland</title>
   <link rel="icon" href="images/cropped-PO.Logo_.RED_.jpg">
 
 	<!-- Bootstrap  -->
@@ -14,13 +14,11 @@
 
   <!-- Other JS/Stylesheets -->
   <link href="./css/index.css" rel="stylesheet" />
-  <script src="./js/index.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
 
 <body>
-	<!-- Navigation Bar -->
 	<nav class="navbar navbar-expand-md navbar-light bg-white">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="index.html">
@@ -29,7 +27,7 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse px-3 px-md-0" id="navbarNavDropdown">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="index.html">Home</a>
@@ -52,7 +50,7 @@
           <a href="https://www.facebook.com/peoplesoakland/" target="_blank">
             <img src="images/facebook-logo.png" height=35px/>
           </a>
-          <form class="d-flex">
+          <form class="d-flex py-2 py-md-0">
             <input id="search-input" class="form-control me" type="search" placeholder="Search" aria-label="Search">
             <button id="search-button" class="btn btn-outline-danger" type="button">
               <img src="images/search-icon.png" height=25px onclick="performSearch()">
@@ -89,11 +87,11 @@
   </div>
 
   <!-- Our Mission -->
-  <div class="row px-4 py-4 mx-4 my-3">
+  <div class="row px-4 pt-4 mx-4 my-3">
     <div class="col-lg-8 mx-auto">
       <h2>Our Mission</h2>
       <p>
-        Peoples Oakland strives to be a premier recovery and wellness center, and is committed to holistic, comprehensive, member driven recovery. To carry out holistic and innovative approaches to mental health, we have constructed a facility with a multi- purpose social center, a commercial kitchen, a fitness center equipped with fitness machines and with space for yoga, dance and exercise classes, meeting rooms, offices, a large secure outside deck and a resource and information center staffed by peers and equipped with computers for access to e-mail and to the internet.
+        Peoples Oakland strives to be a premier recovery and wellness center, and is committed to holistic, comprehensive, member driven recovery. To carry out holistic and innovative approaches to mental health, we have constructed a facility with a multi-purpose social center, a commercial kitchen, a fitness center equipped with fitness machines and with space for yoga, dance and exercise classes, meeting rooms, offices, a large secure outside deck and a resource and information center staffed by peers and equipped with computers for access to e-mail and to the internet.
       </p>
     </div>
   </div>
@@ -106,9 +104,11 @@
         Peoples Oakland currently serves over 200 adults throughout Allegheny County in treatment for chronic severe mental illness (SMI). Today we offer a broad range of events and services to our members, including social and recreational services, individual and group counseling, and employment assistance.
       </p>
       <p>
-        For more information about joining this program, see: <br />
-      <a href="https://www.peoplesoakland.org/wp-content/uploads/2019/11/PO-Member-Handbook-6.14.19.pdf"
-      target="_blank">Members Handbook</a>
+        For more information about what Peoples Oakland offers to its members, see:
+        <br/> <a href="https://www.peoplesoakland.org/wp-content/uploads/2020/03/Peoples-Oakland-Brochure-Revised-07.29.2019-pdf.pdf"
+        target="_blank">Peoples Oakland Brochure</a>
+        <br /> <a href="https://www.peoplesoakland.org/wp-content/uploads/2019/11/PO-Member-Handbook-6.14.19.pdf"
+        target="_blank">Members Handbook</a>
       </p>
       <p>
         To become a member, you need to be referred by your psychiatrist, therapist, or another professional practitioner. Please click the button below to see the list of steps you will need to complete.
@@ -141,7 +141,7 @@
     <div class="col-lg-8 mx-auto">
       <h2>Outcomes</h2>
       <p>
-        Peoples Oakland has made a major positive impact on its members. Our programs including daily counseling and social rehabilitation have helped members gain control of their lifes and use the servicse, to grow, change, and recover. In addition, Peoples Oakland counselors offer crisis intervention services to resolve member crises across a variety of domains.
+        Peoples Oakland has made a major positive impact on its members. Our programs including daily counseling and social rehabilitation have helped members gain control of their lifes and use the services to grow, change, and recover. In addition, Peoples Oakland counselors offer crisis intervention services to resolve member crises across a variety of domains.
       </p>
       <p> In the year 2020-2021: </p>
       <ul>
@@ -159,7 +159,9 @@
     <div class="col-lg-6 mx-auto">
       <p class="h6 mb-4">If you would like to get in touch with us for any reason, please do not hesitate. We are happy to talk to you through email, phone, online meeting, or in-person.</p>
     </div>
-    <button type="button" class="btn btn-danger px-5 py-3">Contact Us</button>
+    <button class="btn btn-danger px-5 py-3" onclick="location.href='./contact.html'">
+      Contact Us
+    </button>
   </div>
 
   <!-- Footer -->

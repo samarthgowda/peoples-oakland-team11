@@ -23,7 +23,7 @@ body {
 }
 
 .hero { /* essentially just any section needing a blue background */
-  background-color: #add9ff;
+  background-color: #ADD9FF;
 }
 
 /* Homepage Cards and Images */
@@ -70,6 +70,7 @@ body {
 
 /* About Us Community-based Goals */
 .community img {
+  max-width: 300px;
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -122,9 +123,9 @@ body {
 .contact-card img {
   height: 250px;
   width: 100%;
-  padding: 5% 0;
   object-fit: cover;
   object-position: center;
+  /* padding: 5% 0; */
 }
 @media (max-width: 576px) {
   height: none;
