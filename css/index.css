@@ -162,17 +162,14 @@ body {
   .support-us img { width: 80%; }
 }
 
-.rowbuff{
-  margin-top: 2em;
-  margin-left: 2em;
-  margin-right: 2em;
-}
+/* Spacing Buffers */
 
 .threeimgBuff{
   margin-bottom: 1.5em;
 }
 
-/* Resources Accordian */
-h2.accordion-header {
-  
+.rowbuff{
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
 }

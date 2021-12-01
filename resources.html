@@ -15,6 +15,7 @@
   <!-- Other JS/Stylesheets -->
   <link href="./css/index.css" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/index.js"></script>
 
 </head>
 
@@ -51,7 +52,7 @@
             <img src="images/facebook-logo.png" height=35px/>
           </a>
           <form class="d-flex py-2 py-md-0">
-            <input id="search-input" class="form-control me" type="search" placeholder="Search" aria-label="Search">
+            <input id="search-input" class="form-control me" type="search" placeholder="Search" aria-label="Search" onkeydown="performSearch(event)">
             <button id="search-button" class="btn btn-outline-danger" type="button">
               <img src="images/search-icon.png" height=25px onclick="performSearch()">
             </button>
@@ -59,23 +60,6 @@
         </div>
       </div>
   </nav>
-  <!-- Search Button Script -->
-  <script>
-    const searchButton = document.getElementById('search-button');
-    const searchInput = document.getElementById('search-input');
-    function performSearch() {
-      if (searchInput.style.display == "none") {
-        searchInput.style.display = "flex";
-      }
-      else {
-        const inputValue = searchInput.value;
-        if (searchInput.value == "")
-          searchInput.style.display = "none";
-        else
-          alert("Cannot search for "+inputValue+ "; not implemented yet!");
-      }
-    };
-  </script>
 
   <!-- Hero -->
   <div class="hero">
